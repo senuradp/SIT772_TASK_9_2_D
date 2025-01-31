@@ -24,7 +24,7 @@ class CustomerController extends Controller
             'STREET' => 'required|max:100',
             'CITY' => 'required|max:50',
             'POSTAL_CODE' => 'required|max:10',
-            'EMAIL' => 'required|email|max:100|unique:customer_contacts',
+            'EMAIL' => 'required|email:rfc,dns|max:100|unique:customer_contacts',
             'PHONE' => 'required|max:15',
         ]);
 
